@@ -18,3 +18,7 @@ class Page:
         
         # Remove newlines, spaces, etc and replace {} with values
         return "".join(.split(generated_text)).format(self.name, self.contents_string)
+    
+    def add(self, element):
+        
+        self.contents_string += element
